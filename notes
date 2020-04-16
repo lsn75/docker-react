@@ -1,0 +1,32 @@
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd frontend
+  npm start
+
+Happy hacking!
+
+
+
+We should use 
+docker run -ti -p 3000:3000 434e12a56e09
+because of https://github.com/facebook/create-react-app/issues/8688
+
+
+
+With volumes
+docker run -ti -p 3000:3000 -v /app/node_modules -v $(pwd):/app 5a2390dd0ecd
